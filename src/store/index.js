@@ -1,16 +1,15 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
+import charmers from './modules/charmers';
+
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-
+  modules: {
+    charmers,
   },
-  mutations: {
 
-  },
-  actions: {
-
-  },
+  strict: true,
+  plugins: [],
 });

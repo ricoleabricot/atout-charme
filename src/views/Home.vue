@@ -1,13 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Charme logo" src="../assets/charme.jpeg">
+  <div>
+    <h1>
+      Atout Charme ♥<br>
+      <small>Qui a le + charmeur d'entre tous ?</small>
+    </h1>
 
-    <h4>Patientez mes petits loulous ♥</h4>
+    <CharmerList/>
   </div>
 </template>
 
 <script>
+import store from '../store/index';
+
+import CharmerList from '../components/CharmerList.vue';
+
 export default {
   name: 'home',
+  components: {
+    CharmerList,
+  },
+
+  beforeRouteEnter(to, from, next) {
+    return store.dispatch('charmers/fetchCharmers').then(next, next);
+  },
+
+  beforeRouteUpdate(to, from, next) {
+    return store.dispatch('charmers/fetchCharmers').then(next, next);
+  },
 };
 </script>
+
+<style>
+  h1 {
+    padding-bottom: 20px;
+  }
+</style>
