@@ -1,6 +1,6 @@
 ci:
   require:
-    - ci/circleci
+    - "ci/circleci: say-hello"
 
 dependencies:
   override:
@@ -8,6 +8,7 @@ dependencies:
 
 merge:
   method: squash
+  revalidate_after: 12m30s
 
 deploy:
   override:
