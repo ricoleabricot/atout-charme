@@ -1,0 +1,15 @@
+ci:
+  require:
+    - ci/circleci
+
+dependencies:
+  override:
+    - "true"
+
+merge:
+  method: squash
+
+deploy:
+  override:
+    - ./script/deploy.sh
+
