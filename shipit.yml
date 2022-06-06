@@ -8,6 +8,8 @@ dependencies:
 
 merge:
   method: squash
+  require:
+    - ci/circleci
 
 deploy:
   override:
