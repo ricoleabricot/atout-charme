@@ -1,6 +1,6 @@
 ci:
   require:
-    - say-hello
+    - "ci/circleci: say-hello"
 
 dependencies:
   override:
