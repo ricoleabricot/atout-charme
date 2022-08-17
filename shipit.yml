@@ -1,0 +1,16 @@
+ci:
+  require:
+    - "ci/circleci: say-hello"
+
+dependencies:
+  override:
+    - "true"
+
+merge:
+  method: squash
+  revalidate_after: 12m30s
+
+deploy:
+  override:
+    - ./script/deploy.sh
+
