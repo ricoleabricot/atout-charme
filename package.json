@@ -13,7 +13,7 @@
     "core-js": "^2.6.5",
     "firebase": "^9.10.0",
     "twemoji-awesome": "^1.0.6",
-    "vue": "^2.6.10",
+    "vue": "^3.0.0",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
