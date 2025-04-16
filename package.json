@@ -11,7 +11,7 @@
     "bootstrap": "^5.0.0",
     "bootstrap-vue": "^2.0.0-rc.21",
     "core-js": "^2.6.5",
-    "firebase": "^10.14.1",
+    "firebase": "^11.6.0",
     "twemoji-awesome": "^1.0.6",
     "vue": "^3.0.0",
     "vue-router": "^3.0.3",
